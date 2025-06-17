@@ -4,6 +4,7 @@ const DataSchema = mongoose.Schema(
   {
     title: { type: String, require: true },
     des: { type: String, require: true },
+    userID: {type: mongoose.Schema.Types.ObjectId, require: true},
   },
   {
     timeStamp: true,
